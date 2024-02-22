@@ -108,9 +108,9 @@ data "aws_ami" "amazon_linux_2" {
     most_recent = true
   
     filter {
-      name = "name"
-      #values = ["amzn2-ami-hvm-*-x86_64-ebs"]
-      values = ["amzn-ami-hvm-*x86_64-gp2"]
+      name   = "name"
+      #values = ["amzn-ami-hvm-*x86_64-gp2"]
+      values = ["amzn2-ami-hvm-*-x86_64-ebs"]
     }
     owners = ["amazon"]
 }
